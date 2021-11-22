@@ -10,6 +10,6 @@ class ComicTopAuthorPage extends StatefulWidget {
 class _ComicTopAuthorPageState extends State<ComicTopAuthorPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
