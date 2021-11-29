@@ -1,4 +1,5 @@
 import 'package:comic/screens/comic_top_author_page.dart';
+import 'package:comic/screens/comic_trending_page.dart';
 import 'package:comic/screens/comin_profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -82,7 +83,7 @@ class _ComicHomePageState extends State<ComicHomePage> {
                                   right: 0,
                                   top: 0,
                                   child: CircleAvatar(
-                                    radius: 8,
+                                    radius: 10,
                                   ),
                                 ),
                               ],
@@ -166,7 +167,9 @@ class _ComicHomePageState extends State<ComicHomePage> {
                             children: [
                               Text('Trending Comic'),
                               IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Get.to(ComicTrendingPage());
+                                },
                                 icon: Icon(Icons.more_horiz),
                               ),
                             ],
